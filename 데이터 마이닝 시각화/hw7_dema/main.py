@@ -12,9 +12,11 @@ print(df.groupby('Team')['Salary'].mean())
 plt.bar(np.arange(len(df.groupby('Team')['Salary'].mean())),df.groupby('Team')['Salary'].mean())
 plt.show()
 
+
+
 print(df['College'].value_counts())
 print("AVG AGE:",df['Age'].mean())
-print("AVG Salary:",df['Salary'].mean())
+print("AVG Salary:",df['Salarys'].mean())
 
 for name, group in df.groupby('Position')['Name']:
     print(name)
